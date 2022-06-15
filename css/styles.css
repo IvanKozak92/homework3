@@ -199,7 +199,6 @@ button {
 }
 .feature-list {
     display: flex;
-    justify-content: space-between;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -207,8 +206,11 @@ button {
 .feature-list .item {
     width: 270px;
 }
+.feature-list .item+.item {
+    margin-left: 30px;
+}
 section .feature-section {
-    margin-top: 94px;
+    padding-top: 94px;
 }
 
 /* Work description */
@@ -223,13 +225,16 @@ section .feature-section {
 }
 .work {
     display: flex;
-    justify-content: space-between;
     padding-left: 0;
     margin-top: 50px;
     margin-bottom: 0;
 }
+.work .item+.item {
+    margin-left: 30px;
+}
 .work-list {
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Our team */
@@ -247,7 +252,6 @@ section .feature-section {
     /* width: 1600px; */
 }
 .team .container {
-    margin-top: 94px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -271,7 +275,6 @@ section .feature-section {
 .team .list {
     display: flex;
     padding-left: 0;
-    justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 0;
 }
@@ -280,6 +283,9 @@ section .feature-section {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     text-align: center;
+}
+.flex-container .item+.item {
+    margin-left: 30px;
 }
 /* Footer */
 .footer {
@@ -312,7 +318,6 @@ section .feature-section {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-background-color);
-    margin-top: 20px;
 }
 
 .address1:focus,
@@ -337,6 +342,12 @@ section .feature-section {
 .footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer .container .list li + li {
+    margin-top: 9px;
+}
+.footer .container .list {
+    margin-top: 20px;
 }
 
 /* Portfolio */
@@ -375,6 +386,7 @@ section .feature-section {
     margin-left: 8px;
 }
 
+
 /* Portfolio section */
 .portfolio-items {
     font-weight: 700;
@@ -404,8 +416,8 @@ section .feature-section {
     margin-top: 34px
 }
 .main-container {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .flex-element {
